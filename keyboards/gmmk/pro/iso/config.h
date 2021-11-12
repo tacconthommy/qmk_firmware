@@ -21,3 +21,9 @@
 #define DRIVER_1_LED_TOTAL 66
 #define DRIVER_2_LED_TOTAL 33
 #define DRIVER_LED_TOTAL (DRIVER_1_LED_TOTAL + DRIVER_2_LED_TOTAL)
+
+#ifdef RGB_MATRIX_ENABLE
+    #define RGB_DISABLE_WHEN_USB_SUSPENDED true
+#endif // RGB_MATRIX_ENABLE
+
+#define KC_CAPP LGUI(LSFT(KC_4))        // Capture portion of screen
